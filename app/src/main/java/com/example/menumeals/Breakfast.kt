@@ -16,6 +16,8 @@ class Breakfast : AppCompatActivity() {
 
         val btnMain = findViewById<Button>(R.id.BtnMain)
 
+        //function to return to main activity
+
         btnMain.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

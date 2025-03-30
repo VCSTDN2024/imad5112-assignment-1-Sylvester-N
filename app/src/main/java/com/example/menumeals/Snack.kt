@@ -14,7 +14,11 @@ class Snack : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_snack)
 
+        //declare buttons
+
         val btnHomeButton = findViewById<Button>(R.id.BtnHomeButton)
+
+        //function to return to main activity
 
         btnHomeButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)

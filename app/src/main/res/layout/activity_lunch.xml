@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pink"
-    tools:context=".Lunch">
+    tools:context=".Lunch"
+    tools:ignore="ExtraText">
 
     <ImageView
         android:id="@+id/imageView"
@@ -126,6 +127,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    //home button to navigate the user back to the main interface
 
     <Button
         android:id="@+id/BtnHome"

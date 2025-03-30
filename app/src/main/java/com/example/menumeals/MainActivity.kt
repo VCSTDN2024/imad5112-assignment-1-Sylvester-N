@@ -49,9 +49,14 @@ class MainActivity : AppCompatActivity() {
             timeInsert?.text?.clear()
             displayTime?.text = ""
         }
+
+        //checkTime fun from previous activity
+
         btnCheck.setOnClickListener {
             checkTime()
         }
+
+        //link buttons to activities
 
         btnBF.setOnClickListener {
             val intent = Intent(this, Breakfast::class.java)

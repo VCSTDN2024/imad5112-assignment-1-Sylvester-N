@@ -17,6 +17,8 @@ class Lunch : AppCompatActivity() {
 
         val btnHome = findViewById<Button>(R.id.BtnHome)
 
+        //function to return to main activity
+
         btnHome.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

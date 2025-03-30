@@ -233,6 +233,8 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    // exit button to exit the app
+
     <Button
         android:id="@+id/BtnExit"
         android:layout_width="160dp"
