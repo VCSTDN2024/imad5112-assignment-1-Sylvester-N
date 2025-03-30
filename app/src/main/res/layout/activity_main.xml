@@ -31,11 +31,11 @@
 
     <EditText
         android:id="@+id/timeInsert"
-        android:layout_width="322dp"
+        android:layout_width="359dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:ems="10"
-        android:hint="Inset time of the day: (e.g. 1100)"
+        android:hint="Inset time of the day: (e.g:1100-11pm)"
         android:inputType="number"
         android:textAlignment="center"
         android:textColorHint="@color/purple"

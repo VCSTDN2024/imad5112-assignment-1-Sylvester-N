@@ -122,6 +122,7 @@ class MainActivity : AppCompatActivity() {
                 when (time) {
 
                     //Range for diferent times of day, for specific meals of the day
+                    // (e.g:600 - 6am = Breakfast)
 
                     in 600..1059 -> displayTime?.text = "Breakfast"
                     in 1100..1259 -> displayTime?.text = "Light-Snack"
