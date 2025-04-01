@@ -12,6 +12,17 @@
     tools:context=".Dinner"
     tools:ignore="ExtraText">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple"
+        android:layout_marginBottom="20dp"
+        android:text="Dessert" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -125,11 +136,11 @@
             android:layout_marginEnd="40dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.32"
-            app:srcCompat="@drawable/dessert4"/>
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/dessert4" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -167,6 +178,8 @@
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 
 </LinearLayout>

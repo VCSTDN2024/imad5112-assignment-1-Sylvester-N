@@ -29,7 +29,8 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="150dp" />
+        android:layout_height="150dp"
+        android:layout_marginBottom="20dp"/>
 
     //EditText for user to input time of day
 
@@ -39,13 +40,14 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:ems="10"
+        android:textColor="@color/purple"
         android:hint="Inset time of the day: (e.g:1100-11pm)"
         android:inputType="number"
         android:textAlignment="center"
         android:textColorHint="@color/purple"
         android:textSize="20sp" />
 
-    //TextView for displaying meal of the day
+    //TextView for displaying error message
 
     <TextView
         android:id="@+id/displayTime"
@@ -71,7 +73,7 @@
 
         <Button
             android:id="@+id/BtnReset"
-            android:layout_width="145dp"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
@@ -89,7 +91,7 @@
 
         <Button
             android:id="@+id/BtnCheck"
-            android:layout_width="145dp"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="24dp"
@@ -113,6 +115,7 @@
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/purple"
+        android:layout_marginTop="20dp"
         android:text="exit"
         android:textStyle="bold"
         android:textColor="@color/white"

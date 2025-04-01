@@ -18,33 +18,43 @@ import com.example.menumeals.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    //private lateinit var binding: ActivityMainBinding
+
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
+        //setContentView(R.layout.activity_main)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //setContentView(binding.root)
 
         binding.BtnReset.setOnClickListener {
             binding.timeInsert.text.clear()
             binding.displayTime.text = ""
         }
 
-
         binding.BtnCheck.setOnClickListener {
             checkTimeAndNavigate()
         }
 
+        //exit button
+
         val btnExit = findViewById<Button>(R.id.BtnExit)
+
+        // Set a click listener for the button
 
         btnExit.setOnClickListener {
             finishAffinity()
             exitProcess(0)
         }
-
-
     }
+
+    //check if user input is empty
 
     private fun isNotEmpty(): Boolean {
         var b = true
@@ -62,19 +72,26 @@ class MainActivity : AppCompatActivity() {
         return b
     }
 
+    //check time of day and navigate to corresponding activity
+
     private fun checkTimeAndNavigate() {
         if (isNotEmpty()) {
             val timeText = binding.timeInsert.text.toString().trim()
             val time = timeText.toIntOrNull()
             if (time != null) {
                 val intent = when (time) {
-                    in 600..1159 -> Intent(this, Breakfast::class.java)
-                    in 1200..1359 -> Intent(this, Lunch::class.java)
-                    in 1400..1759 -> Intent(this, Snack::class.java)
-                    in 1800..2159 -> Intent(this, Dinner::class.java)
+
+                    in 600..1059 -> Intent(this, Breakfast::class.java)
+                    in 1100..1259 -> Intent(this, Snack::class.java)
+                    in 1300..1559 -> Intent(this, Lunch::class.java)
+                    in 1600..1859 -> Intent(this, QuickBite::class.java)
+                    in 1900..2159 ->Intent(this, Dinner::class.java)
+                    in 2200..2230 -> Intent(this, Dessert::class.java)
+
                     else -> {
                         binding.displayTime.text = "No meals are served at this time of day."
-                        return // Exit the function if the time is invalid
+
+                        return
                     }
                 }
                 startActivity(intent)
