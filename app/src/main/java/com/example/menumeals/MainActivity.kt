@@ -1,3 +1,6 @@
+/* Referencing List */
+/* Binding Youtube video:https://youtu.be/By1jrbOTUF8?si=jlPpJxhEdaz-PTjI*/
+
 package com.example.menumeals
 
 import android.content.Intent
@@ -55,6 +58,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     //check if user input is empty
+    // if empty, display error message and not allow user to continue to next activity when the text field is empty
 
     private fun isNotEmpty(): Boolean {
         var b = true

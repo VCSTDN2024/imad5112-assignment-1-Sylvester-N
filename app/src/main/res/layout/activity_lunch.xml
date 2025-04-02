@@ -165,5 +165,13 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
         app:layout_constraintVertical_bias="0.382" />
 
+    <!-- Referencing List
 
+        Pintrest images.
+        https://pin.it/6pYrurmIS
+        https://pin.it/6TSQYHLtn
+        https://pin.it/6AaoeAICT
+        https://pin.it/77LVReVmU
+
+        -->
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -177,6 +177,15 @@
             app:layout_constraintStart_toEndOf="@+id/textView12"
             app:layout_constraintTop_toTopOf="parent" />
 
+
+        <!-- Referencing List
+
+        Pintrest images.
+        https://pin.it/3RTVnM29p
+        https://pin.it/1hrXg3tVo
+        https://pin.it/7qysj2nwQ
+        https://pin.it/6Of2u2Hxx-->
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

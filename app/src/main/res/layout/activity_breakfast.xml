@@ -186,4 +186,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+
+    <!-- Referencing List
+
+Pintrest images.
+https://pin.it/wpZU8qiEn
+https://pin.it/74F9V9Amg
+https://pin.it/2DZnKZbyu
+https://pin.it/2d3o7sRq1
+
+-->
+
 </LinearLayout>
