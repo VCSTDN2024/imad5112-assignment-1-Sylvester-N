@@ -16,7 +16,6 @@
 - **YouTube Video**: https://www.youtube.com/watch?v=FtQWr5sIzN0
 
 
-
 ## Project Overview
 
 The Menu Meals is a mobile application developed as part of an assignment in Introduction to Mobile Application Development. This application was put together, utilising the software "Android Studio" and prompted by kotlin, a programming language used in Android Studio. The app's primary purpose is to assist a user who may have a hard time making choices on what types of food to eat based of their work schedule and the specific time of day. The users is allowed to enter the specific/current time of day and the application then opens a menu displaying different types off food a user could have for Breakfast, lunch, dinner or rather if they whish to have a light snack, quick-bite or dessert, depending on the time the user uses the app.
